@@ -7,7 +7,7 @@ rbenv, but for node.
 To install the latest stable release:
 
 ```
-git clone -b v0.2.2 https://github.com/wfarr/nodenv.git ~/.nodenv
+git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 ```
 
 Then add the following to your shell config at the end:
@@ -38,6 +38,8 @@ See `nodenv help <command>' for information on a specific command.
 ```
 
 ## Credits
+
+Forked from [@wfarr](https://github.com/wfarr) as he wasn't keeping up with pull requests.
 
 This library was heavily, heavily, heavily inspired by
 [@sstephenson](https://github.com/sstephenson)'s
