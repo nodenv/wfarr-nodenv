@@ -94,7 +94,7 @@ nodenv install iojs
 
 ## Credits
 
-Forked from [@wfarr](https://github.com/wfarr) as he wasn't keeping up with pull requests.
+Forked from [@wfarr](https://github.com/wfarr)'s [nodenv](https://github.com/wfarr/nodenv).
 
 This library was heavily, heavily, heavily inspired by
 [@sstephenson](https://github.com/sstephenson)'s
