@@ -73,6 +73,7 @@ if [ -z "$print" ]; then
   { echo "# Load nodenv automatically by adding"
     echo "# the following to ${profile}:"
     echo
+    echo 'export PATH="'${NODENV_ROOT}'/bin:$PATH"'
     is_fish && echo '. (nodenv init - | psub)' || \
       echo 'eval "$(nodenv init -)"'
     echo
@@ -83,10 +84,18 @@ fi
 
 mkdir -p "${NODENV_ROOT}/"{shims,versions}
 
+completion="${root}/completions/nodenv.${shell}"
+if [ -r "$completion" ]; then
+  case "$shell" in
+  fish ) echo ". '$completion'" ;;
+  *    ) echo "source '$completion'" ;;
+  esac
+fi
+
 is_fish && {
   echo 'set -x PATH "'${NODENV_ROOT}'/shims" $PATH'
   echo 'nodenv rehash ^/dev/null'
 } || {
   echo 'export PATH="'${NODENV_ROOT}'/shims:${PATH}"'
-  echo 'nodenv rehash 2>/dev/null'  
+  echo 'nodenv rehash 2>/dev/null'
 }
