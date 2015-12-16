@@ -7,7 +7,7 @@ rbenv, but for node.
 To install the latest stable release:
 
 ```
-git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+git clone https://github.com/nodenv/wfarr-nodenv.git ~/.nodenv
 ```
 
 Then add the following to your shell config at the end:
@@ -32,13 +32,13 @@ ownership allows members of the group, below creates a new group, you can use
 a pre-existing one also. To add a user to this group `usermod -aG nodenv user`
 
 ```
-git clone -b v0.3.4 https://github.com/wfarr/nodenv.git /usr/local/lib/nodenv
+git clone https://github.com/nodenv/wfarr-nodenv.git /usr/local/lib/nodenv
 sudo /usr/sbin/groupadd nodenv
 sudo chgrp -R /usr/local/lib/nodenv
 sudo chmod g+ws /usr/local/lib/nodenv
 ```
 
-Then add teh following to `/etc/profiled.d/nodenv.sh`
+Then add the following to `/etc/profiled.d/nodenv.sh`
 
 ```
 export NODENV_ROOT=/usr/local/lib/nodenv
