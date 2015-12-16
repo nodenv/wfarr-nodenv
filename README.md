@@ -20,8 +20,8 @@ eval "$(nodenv init -)"
 Finally, install and use a node version
 
 ```
-node install v0.10.26
-node global v0.10.26
+nodenv install v0.10.26
+nodenv global v0.10.26
 ```
 
 ## Global install
