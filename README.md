@@ -98,8 +98,8 @@ Forked from [@wfarr](https://github.com/wfarr)'s [nodenv](https://github.com/wfa
 
 This library was heavily, heavily, heavily inspired by
 [@sstephenson](https://github.com/sstephenson)'s
-[rbenv](https://github.com/sstephenson/rbenv) and
-[ruby-build](https://github.com/sstephenson/ruby-build) projects.
+[rbenv](https://github.com/rbenv/rbenv) and
+[ruby-build](https://github.com/rbenv/ruby-build) projects.
 A few ideas were also taken from [nvm](https://github.com/creationix/nvm).
 
 A number of patterns and utilities are borrowed from that project,
