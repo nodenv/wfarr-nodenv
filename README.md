@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This version of nodenv has been deprecated in favor of: [nodenv/nodenv](https://github.com/nodenv/nodenv)
+
 # nodenv
 
 rbenv, but for node.
